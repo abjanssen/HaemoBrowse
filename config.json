@@ -92,7 +92,7 @@
   ],
   "assemblies": [
     {
-      "name": "Rd KW20",
+      "name": "RdKW20",
       "sequence": {
         "type": "ReferenceSequenceTrack",
         "trackId": "RdKW20-ReferenceSequenceTrack",
@@ -156,7 +156,7 @@
       }
     },
     {
-      "name": "P570 (R2866)",
+      "name": "P570R2866",
       "sequence": {
         "type": "ReferenceSequenceTrack",
         "trackId": "P570R2866-ReferenceSequenceTrack",
@@ -1026,7 +1026,7 @@
     },
     "minimized": false,
     "id": "HGyGmhbSgPclwODgMx7Yz",
-    "name": "HaemoBrowse (v0.4)",
+    "name": "HaemoBrowse (v0.5)",
     "margin": 0,
     "views": [
       {
@@ -1151,7 +1151,7 @@
       },
       {
         "id": "ve-e_iPYUjILjyWKbs4kX",
-        "displayName": "NCTC 8325-4",
+        "displayName": "NP",
         "minimized": true,
         "type": "LinearGenomeView",
         "offsetPx": 0,
