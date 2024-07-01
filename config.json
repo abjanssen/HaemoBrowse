@@ -334,6 +334,74 @@
     },
     {
       "type": "FeatureTrack",
+      "trackId": "Hi375_sgRNA_sorted.gff",
+      "name": "sgRNAs",
+      "assemblyNames": [
+        "Hi375"
+      ],
+      "category": [
+        "CRISPRi"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "data/Hi375/Hi375_sgRNA_sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "data/Hi375/Hi375_sgRNA_sorted.gff.gz.tbi"
+          }
+        }
+      },
+      "textSearching": {
+        "indexingAttributes": [
+          "Name",
+          "ID",
+          "name"
+        ],
+        "textSearchAdapter": {
+          "type": "TrixTextSearchAdapter",
+          "textSearchAdapterId": "Hi375_sgRNA_sorted.gff-index",
+          "ixFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/Hi375_sgRNA_sorted.gff.ix"
+          },
+          "ixxFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/Hi375_sgRNA_sorted.gff.ixx"
+          },
+          "metaFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/Hi375_sgRNA_sorted.gff_meta.json"
+          },
+          "assemblyNames": [
+            "Hi375"
+          ]
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "Hi375_sgRNA_sorted.gff-LinearBasicDisplay",
+          "mouseover": "jexl:sgrnatarget(get(feature,'target_gene_name'))",
+          "renderer": {
+            "type": "SvgFeatureRenderer",
+            "color1": "rgb(214, 59, 59)"
+          }
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "Hi375_sgRNA_sorted.gff-LinearArcDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+      }
+    },
+    {
+      "type": "FeatureTrack",
       "trackId": "R2866_sorted.gff",
       "name": "Coding features",
       "assemblyNames": [
@@ -442,6 +510,74 @@
           "maxScore": 0.8
         }
       ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "R2866_sgRNA_sorted.gff",
+      "name": "sgRNAs",
+      "assemblyNames": [
+        "R2866"
+      ],
+      "category": [
+        "CRISPRi"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "data/R2866/R2866_sgRNA_sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "data/R2866/R2866_sgRNA_sorted.gff.gz.tbi"
+          }
+        }
+      },
+      "textSearching": {
+        "indexingAttributes": [
+          "Name",
+          "ID",
+          "name"
+        ],
+        "textSearchAdapter": {
+          "type": "TrixTextSearchAdapter",
+          "textSearchAdapterId": "R2866_sgRNA_sorted.gff-index",
+          "ixFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/R2866_sgRNA_sorted.gff.ix"
+          },
+          "ixxFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/R2866_sgRNA_sorted.gff.ixx"
+          },
+          "metaFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/R2866_sgRNA_sorted.gff_meta.json"
+          },
+          "assemblyNames": [
+            "R2866"
+          ]
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "R2866_sgRNA_sorted.gff-LinearBasicDisplay",
+          "mouseover": "jexl:sgrnatarget(get(feature,'target_gene_name'))",
+          "renderer": {
+            "type": "SvgFeatureRenderer",
+            "color1": "rgb(214, 59, 59)"
+          }
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "R2866_sgRNA_sorted.gff-LinearArcDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+      }
     },
     {
       "type": "FeatureTrack",
@@ -556,6 +692,74 @@
     },
     {
       "type": "FeatureTrack",
+      "trackId": "RdKW20_sgRNA_sorted.gff",
+      "name": "sgRNAs",
+      "assemblyNames": [
+        "RdKW20"
+      ],
+      "category": [
+        "CRISPRi"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "data/RdKW20/RdKW20_sgRNA_sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "data/RdKW20/RdKW20_sgRNA_sorted.gff.gz.tbi"
+          }
+        }
+      },
+      "textSearching": {
+        "indexingAttributes": [
+          "Name",
+          "ID",
+          "name"
+        ],
+        "textSearchAdapter": {
+          "type": "TrixTextSearchAdapter",
+          "textSearchAdapterId": "RdKW20_sgRNA_sorted.gff-index",
+          "ixFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/RdKW20_sgRNA_sorted.gff.ix"
+          },
+          "ixxFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/RdKW20_sgRNA_sorted.gff.ixx"
+          },
+          "metaFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/RdKW20_sgRNA_sorted.gff_meta.json"
+          },
+          "assemblyNames": [
+            "RdKW20"
+          ]
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "RdKW20_sgRNA_sorted.gff-LinearBasicDisplay",
+          "mouseover": "jexl:sgrnatarget(get(feature,'target_gene_name'))",
+          "renderer": {
+            "type": "SvgFeatureRenderer",
+            "color1": "rgb(214, 59, 59)"
+          }
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "RdKW20_sgRNA_sorted.gff-LinearArcDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+      }
+    },
+    {
+      "type": "FeatureTrack",
       "trackId": "86028NP_sorted.gff",
       "name": "Coding features",
       "assemblyNames": [
@@ -664,6 +868,74 @@
           "maxScore": 0.8
         }
       ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "86028NP_sgRNA_sorted.gff",
+      "name": "sgRNAs",
+      "assemblyNames": [
+        "86028NP"
+      ],
+      "category": [
+        "CRISPRi"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "data/86028NP/86028NP_sgRNA_sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "data/86028NP/86028NP_sgRNA_sorted.gff.gz.tbi"
+          }
+        }
+      },
+      "textSearching": {
+        "indexingAttributes": [
+          "Name",
+          "ID",
+          "name"
+        ],
+        "textSearchAdapter": {
+          "type": "TrixTextSearchAdapter",
+          "textSearchAdapterId": "86028NP_sgRNA_sorted.gff-index",
+          "ixFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/86028NP_sgRNA_sorted.gff.ix"
+          },
+          "ixxFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/86028NP_sgRNA_sorted.gff.ixx"
+          },
+          "metaFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/86028NP_sgRNA_sorted.gff_meta.json"
+          },
+          "assemblyNames": [
+            "86028NP"
+          ]
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "86028NP_sgRNA_sorted.gff-LinearBasicDisplay",
+          "mouseover": "jexl:sgrnatarget(get(feature,'target_gene_name'))",
+          "renderer": {
+            "type": "SvgFeatureRenderer",
+            "color1": "rgb(214, 59, 59)"
+          }
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "86028NP_sgRNA_sorted.gff-LinearArcDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+      }
     }
   ],
   "internetAccounts": [],
@@ -680,7 +952,7 @@
       "hierarchicalTrackSelector": {
         "id": "hierarchicalTrackSelector",
         "type": "HierarchicalTrackSelectorWidget",
-        "view": "1jsQQ0IgyZkK9hfZvZVuQ",
+        "view": "L95ZzLLpZczZSHjhWF4Ls",
         "faceted": {
           "filterText": "",
           "showSparse": false,
@@ -778,8 +1050,6 @@
         },
         "id": "baseFeature",
         "type": "BaseFeatureWidget",
-        "view": "6clHXDsWpplZHJnEKMMpq",
-        "track": "VXkgQjHeTKXqr25UTCEEc",
         "trackId": "86028NP_sorted.gff",
         "trackType": "FeatureTrack",
         "maxDepth": 99999,
@@ -787,12 +1057,11 @@
       }
     },
     "activeWidgets": {
-      "baseFeature": "baseFeature",
       "hierarchicalTrackSelector": "hierarchicalTrackSelector"
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v0.9)",
+    "name": "HaemoBrowse (v0.10)",
     "margin": 0,
     "views": [
       {
@@ -917,6 +1186,7 @@
       },
       {
         "id": "1jsQQ0IgyZkK9hfZvZVuQ",
+        "displayName": "Rd KW20",
         "minimized": false,
         "type": "LinearGenomeView",
         "offsetPx": 0,
@@ -976,12 +1246,12 @@
         "showBookmarkLabels": true
       },
       {
-        "id": "6clHXDsWpplZHJnEKMMpq",
+        "id": "L95ZzLLpZczZSHjhWF4Ls",
         "displayName": "86-028NP",
         "minimized": true,
         "type": "LinearGenomeView",
         "offsetPx": 0,
-        "bpPerPx": 2.3191094619666046,
+        "bpPerPx": 3.0413625304136254,
         "displayedRegions": [
           {
             "reversed": false,
@@ -993,15 +1263,15 @@
         ],
         "tracks": [
           {
-            "id": "3vMG_MY_QOYGQ09Y0BKPR",
+            "id": "BU-4DnMD00j3rxyQ3ks1r",
             "type": "ReferenceSequenceTrack",
             "configuration": "NP-ReferenceSequenceTrack",
             "minimized": false,
             "displays": [
               {
-                "id": "ryB_fqrrrGNVMnR8kIRY1",
+                "id": "GHTLy8mIWG41Ps9ICTGiw",
                 "type": "LinearReferenceSequenceDisplay",
-                "heightPreConfig": 120,
+                "heightPreConfig": 50,
                 "configuration": "86028NP-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
                 "showForward": true,
                 "showReverse": true,
@@ -1010,13 +1280,13 @@
             ]
           },
           {
-            "id": "VXkgQjHeTKXqr25UTCEEc",
+            "id": "z8bjOLB7m1ncqHCZ2rIjZ",
             "type": "FeatureTrack",
             "configuration": "86028NP_sorted.gff",
             "minimized": false,
             "displays": [
               {
-                "id": "Uid8VG9yxpk36Kr7uenrl",
+                "id": "JXnD8OAEA1PUXcy4C8r2R",
                 "type": "LinearBasicDisplay",
                 "configuration": "86028NP_sorted.gff-LinearBasicDisplay"
               }
@@ -1042,7 +1312,7 @@
     "temporaryAssemblies": [],
     "connectionInstances": [],
     "sessionConnections": [],
-    "focusedViewId": "1jsQQ0IgyZkK9hfZvZVuQ",
+    "focusedViewId": "L95ZzLLpZczZSHjhWF4Ls",
     "sessionPlugins": []
   }
 }
