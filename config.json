@@ -92,38 +92,6 @@
   ],
   "assemblies": [
     {
-      "name": "RdKW20",
-      "sequence": {
-        "type": "ReferenceSequenceTrack",
-        "trackId": "RdKW20-ReferenceSequenceTrack",
-        "adapter": {
-          "type": "IndexedFastaAdapter",
-          "fastaLocation": {
-            "locationType": "UriLocation",
-            "uri": "./data/RdKW20/RdKW20.fna"
-          },
-          "faiLocation": {
-            "locationType": "UriLocation",
-            "uri": "./data/RdKW20/RdKW20.fna.fai"
-          },
-          "metadataLocation": {
-            "locationType": "UriLocation",
-            "uri": "/path/to/fa.metadata.yaml"
-          }
-        },
-        "displays": [
-          {
-            "type": "LinearReferenceSequenceDisplay",
-            "displayId": "RdKW20-ReferenceSequenceTrack-LinearReferenceSequenceDisplay"
-          },
-          {
-            "type": "LinearGCContentDisplay",
-            "displayId": "RdKW20-ReferenceSequenceTrack-LinearGCContentDisplay"
-          }
-        ]
-      }
-    },
-    {
       "name": "Hi375",
       "sequence": {
         "type": "ReferenceSequenceTrack",
@@ -151,6 +119,38 @@
           {
             "type": "LinearGCContentDisplay",
             "displayId": "Hi375-ReferenceSequenceTrack-LinearGCContentDisplay"
+          }
+        ]
+      }
+    },
+    {
+      "name": "86028NP",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "NP-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "locationType": "UriLocation",
+            "uri": "./data/86028NP/86028NP.fna"
+          },
+          "faiLocation": {
+            "locationType": "UriLocation",
+            "uri": "./data/86028NP/86028NP.fna.fai"
+          },
+          "metadataLocation": {
+            "locationType": "UriLocation",
+            "uri": "/path/to/fa.metadata.yaml"
+          }
+        },
+        "displays": [
+          {
+            "type": "LinearReferenceSequenceDisplay",
+            "displayId": "86028NP-ReferenceSequenceTrack-LinearReferenceSequenceDisplay"
+          },
+          {
+            "type": "LinearGCContentDisplay",
+            "displayId": "86028NP-ReferenceSequenceTrack-LinearGCContentDisplay"
           }
         ]
       }
@@ -188,19 +188,19 @@
       }
     },
     {
-      "name": "NP",
+      "name": "RdKW20",
       "sequence": {
         "type": "ReferenceSequenceTrack",
-        "trackId": "NP-ReferenceSequenceTrack",
+        "trackId": "RdKW20-ReferenceSequenceTrack",
         "adapter": {
           "type": "IndexedFastaAdapter",
           "fastaLocation": {
             "locationType": "UriLocation",
-            "uri": "./data/NP/NP.fna"
+            "uri": "./data/RdKW20/RdKW20.fna"
           },
           "faiLocation": {
             "locationType": "UriLocation",
-            "uri": "./data/NP/NP.fna.fai"
+            "uri": "./data/RdKW20/RdKW20.fna.fai"
           },
           "metadataLocation": {
             "locationType": "UriLocation",
@@ -210,11 +210,11 @@
         "displays": [
           {
             "type": "LinearReferenceSequenceDisplay",
-            "displayId": "NP-ReferenceSequenceTrack-LinearReferenceSequenceDisplay"
+            "displayId": "RdKW20-ReferenceSequenceTrack-LinearReferenceSequenceDisplay"
           },
           {
             "type": "LinearGCContentDisplay",
-            "displayId": "NP-ReferenceSequenceTrack-LinearGCContentDisplay"
+            "displayId": "RdKW20-ReferenceSequenceTrack-LinearGCContentDisplay"
           }
         ]
       }
@@ -553,6 +553,117 @@
           "maxScore": 0.8
         }
       ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "86028NP_sorted.gff",
+      "name": "Coding features",
+      "assemblyNames": [
+        "86028NP"
+      ],
+      "category": [
+        "Annotation"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "data/86028NP/86028NP_sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "data/86028NP/86028NP_sorted.gff.gz.tbi"
+          }
+        }
+      },
+      "textSearching": {
+        "textSearchAdapter": {
+          "type": "TrixTextSearchAdapter",
+          "textSearchAdapterId": "86028NP_sorted.gff-index",
+          "ixFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/86028NP_sorted.gff.ix"
+          },
+          "ixxFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/86028NP_sorted.gff.ixx"
+          },
+          "metaFilePath": {
+            "locationType": "UriLocation",
+            "uri": "trix/86028NP_sorted.gff_meta.json"
+          },
+          "assemblyNames": [
+            "86028NP"
+          ]
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "86028NP_sorted.gff-LinearBasicDisplay",
+          "height": 200,
+          "mouseover": "jexl:italics(get(feature,'name')) || get(feature,'locus_tag')",
+          "renderer": {
+            "type": "SvgFeatureRenderer",
+            "color1": "jexl:get(feature,'type')=='tRNA'?'rgb(45, 41, 138)': get(feature,'type')=='tmRNA'?'rgb(45, 41, 138)': get(feature,'type')=='rRNA'?'rgb(136, 184, 77)' : get(feature,'type')=='mRNA_region'?'grey':'rgb(215, 163, 32)'",
+            "labels": {
+              "name": "jexl:get(feature,'name') || get(feature,'locus_tag')"
+            }
+          }
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "86028NP_sorted.gff-LinearArcDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{name:italics(feature.name),type:capital(replaceuc(feature.type)), Source:capital(replaceuc(feature.source)), source:undefined, phase:undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, Locus_tag_prokka:feature.locus_tag, Locus_tag_pangenome:feature.locus_tag_pan, locus_tag_pan:undefined, locus_tag:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, }",
+        "subfeatures": "jexl:{accession:undefined, name:italics(feature.name), type:capital(feature.type), Source:replaceuc(feature.source), source:undefined, phase:undefined, id:undefined, parent:undefined, COG_number: feature.db_xref != null ? '<a href=https://www.ncbi.nlm.nih.gov/research/cog/cog/'+removecog(feature.db_xref)+'>'+removecog(feature.db_xref)+'</a>' : null, db_xref:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, Gene:italics(feature.gene), gene:undefined, Inference:feature.inference != null ? capital(inference(feature.inference)) : null, inference:undefined, locus_tag:undefined, Product:capital(feature.product), product:undefined, protein_id:undefined, RFAM: feature.accession != null ? '<a href=https://rfam.org/family/'+feature.accession+'>'+feature.accession+'</a>' : null, note:undefined, Note: feature.note != null ? removequotes(feature.note): null}"
+      }
+    },
+    {
+      "type": "NucContentTrack",
+      "trackId": "gc_content_86028NP",
+      "name": "GC content",
+      "assemblyNames": [
+        "86028NP"
+      ],
+      "category": [
+        "Genome Characteristics"
+      ],
+      "adapter": {
+        "type": "NucContentAdapter",
+        "sequenceAdapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "locationType": "UriLocation",
+            "uri": "data/86028NP/86028NP.fna.gz"
+          },
+          "faiLocation": {
+            "locationType": "UriLocation",
+            "uri": "data/86028NP/86028NP.fna.gz.fai"
+          },
+          "metadataLocation": {
+            "locationType": "UriLocation",
+            "uri": "/path/to/fa.metadata.yaml"
+          },
+          "gziLocation": {
+            "locationType": "UriLocation",
+            "uri": "data/86028NP/86028NP.fna.gz.gzi"
+          }
+        },
+        "windowSize": 200,
+        "windowOverlap": 10
+      },
+      "displays": [
+        {
+          "type": "NucContentDisplay",
+          "displayId": "gc_content_dynamic_86028NP-NucContentDisplay",
+          "minScore": 0,
+          "maxScore": 0.8
+        }
+      ]
     }
   ],
   "internetAccounts": [],
@@ -577,19 +688,116 @@
           "showOptions": false,
           "panelWidth": 400
         }
+      },
+      "baseFeature": {
+        "finalizedFeatureData": {
+          "source": "prokka",
+          "type": "gene",
+          "start": 3854,
+          "end": 4319,
+          "strand": -1,
+          "phase": 0,
+          "derived_features": [],
+          "refName": "86028NP",
+          "id": "NEGGOPBL_00004_gene",
+          "name": "ybeY",
+          "gene": "ybeY",
+          "locus_tag": "NEGGOPBL_00004",
+          "subfeatures": [
+            {
+              "strand": -1,
+              "source": "Prodigal:002006",
+              "type": "CDS",
+              "start": 3854,
+              "end": 4319,
+              "phase": 0,
+              "derived_features": [],
+              "refName": "86028NP",
+              "id": "NEGGOPBL_00004",
+              "parent": "NEGGOPBL_00004_gene",
+              "ec_number": "3.1.-.-",
+              "name": "ybeY",
+              "db_xref": "COG:COG0319",
+              "gene": "ybeY",
+              "inference": [
+                "ab initio prediction:Prodigal:002006",
+                "similar to AA sequence:UniProtKB:P71335"
+              ],
+              "locus_tag": "NEGGOPBL_00004",
+              "product": "Endoribonuclease YbeY",
+              "protein_id": "gnl|Prokka|NEGGOPBL_00004",
+              "uniqueId": "507439995-offset-2515031-0",
+              "parentId": "507439995-offset-2515031",
+              "__jbrowsefmt": {
+                "accession": null,
+                "name": "<i>ybeY</i>",
+                "type": "CDS",
+                "Source": "Prodigal:002006",
+                "source": null,
+                "phase": null,
+                "id": null,
+                "parent": null,
+                "COG_number": "<a href=https://www.ncbi.nlm.nih.gov/research/cog/cog/COG0319>COG0319</a>",
+                "db_xref": null,
+                "EC_number": "<a href=https://enzyme.expasy.org/EC/3.1.-.->3.1.-.-</a>",
+                "ec_number": null,
+                "Gene": "<i>ybeY</i>",
+                "gene": null,
+                "Inference": [
+                  "ab initio prediction:Prodigal:002006",
+                  "similar to AA sequence:UniProtKB:P71335"
+                ],
+                "inference": null,
+                "locus_tag": null,
+                "Product": "Endoribonuclease YbeY",
+                "product": null,
+                "protein_id": null,
+                "RFAM": null,
+                "note": null,
+                "Note": null
+              }
+            }
+          ],
+          "uniqueId": "507439995-offset-2515031",
+          "__jbrowsefmt": {
+            "name": "<i>ybeY</i>",
+            "type": "Gene",
+            "Source": "Prokka",
+            "source": null,
+            "phase": null,
+            "id": null,
+            "Gene": "<i>ybeY</i>",
+            "gene": null,
+            "Locus_tag_prokka": "NEGGOPBL_00004",
+            "Locus_tag_pangenome": null,
+            "locus_tag_pan": null,
+            "locus_tag": null,
+            "EC_number": null,
+            "ec_number": null
+          }
+        },
+        "id": "baseFeature",
+        "type": "BaseFeatureWidget",
+        "view": "6clHXDsWpplZHJnEKMMpq",
+        "track": "VXkgQjHeTKXqr25UTCEEc",
+        "trackId": "86028NP_sorted.gff",
+        "trackType": "FeatureTrack",
+        "maxDepth": 99999,
+        "sequenceFeatureDetails": {}
       }
     },
     "activeWidgets": {
+      "baseFeature": "baseFeature",
       "hierarchicalTrackSelector": "hierarchicalTrackSelector"
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v0.8) ",
+    "name": "HaemoBrowse (v0.9)",
     "margin": 0,
     "views": [
       {
         "id": "raZrN1AK9eGFmxWHs5glK",
-        "minimized": false,
+        "minimized": true,
         "type": "LinearGenomeView",
         "offsetPx": 0,
         "bpPerPx": 3.0413625304136254,
@@ -649,7 +857,7 @@
       },
       {
         "id": "HqsUJzoM5lv28ijzmdLh3",
-        "minimized": false,
+        "minimized": true,
         "type": "LinearGenomeView",
         "offsetPx": 0,
         "bpPerPx": 3.0413625304136254,
@@ -750,6 +958,67 @@
                 "id": "2aVUO00cZCldDwlBLv8hR",
                 "type": "LinearBasicDisplay",
                 "configuration": "RdKW20_sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "trackLabels": "",
+        "showGridlines": true,
+        "highlight": [],
+        "colorByCDS": false,
+        "showBookmarkHighlights": true,
+        "showBookmarkLabels": true
+      },
+      {
+        "id": "6clHXDsWpplZHJnEKMMpq",
+        "displayName": "86-028NP",
+        "minimized": true,
+        "type": "LinearGenomeView",
+        "offsetPx": 0,
+        "bpPerPx": 2.3191094619666046,
+        "displayedRegions": [
+          {
+            "reversed": false,
+            "refName": "86028NP",
+            "start": 0,
+            "end": 1914490,
+            "assemblyName": "86028NP"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "3vMG_MY_QOYGQ09Y0BKPR",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "NP-ReferenceSequenceTrack",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "ryB_fqrrrGNVMnR8kIRY1",
+                "type": "LinearReferenceSequenceDisplay",
+                "heightPreConfig": 120,
+                "configuration": "86028NP-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": true,
+                "showTranslation": true
+              }
+            ]
+          },
+          {
+            "id": "VXkgQjHeTKXqr25UTCEEc",
+            "type": "FeatureTrack",
+            "configuration": "86028NP_sorted.gff",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "Uid8VG9yxpk36Kr7uenrl",
+                "type": "LinearBasicDisplay",
+                "configuration": "86028NP_sorted.gff-LinearBasicDisplay"
               }
             ]
           }
