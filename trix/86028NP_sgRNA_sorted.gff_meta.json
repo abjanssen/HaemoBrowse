@@ -1,12 +1,12 @@
 {
-  "dateCreated": "2024-07-12T17:28:28.900Z",
+  "dateCreated": "2024-07-12T17:28:31.885Z",
   "tracks": [
     {
-      "trackId": "R2866_sorted.gff",
+      "trackId": "86028NP_sgRNA_sorted.gff",
       "attributesIndexed": [
-        "name",
-        "gene",
-        "locus_tag"
+        "Name",
+        "ID",
+        "name"
       ],
       "excludedTypes": [
         "CDS",
@@ -17,18 +17,18 @@
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
           "locationType": "UriLocation",
-          "uri": "data/R2866/R2866_sorted.gff.gz"
+          "uri": "data/86028NP/86028NP_sgRNA_sorted.gff.gz"
         },
         "index": {
           "location": {
             "locationType": "UriLocation",
-            "uri": "data/R2866/R2866_sorted.gff.gz.tbi"
+            "uri": "data/86028NP/86028NP_sgRNA_sorted.gff.gz.tbi"
           }
         }
       }
     }
   ],
   "assemblyNames": [
-    "R2866"
+    "86028NP"
   ]
 }

@@ -42,6 +42,12 @@
       }
     },
     {
+      "name": "JSONParse",
+      "umdLoc": {
+        "uri": "plugins/JSONParse.js"
+      }
+    },
+    {
       "name": "ReplaceSpaces",
       "umdLoc": {
         "uri": "plugins/ReplaceSpaces.js"
@@ -388,7 +394,10 @@
           "mouseover": "jexl:sgrnatarget(get(feature,'target_gene_name'))",
           "renderer": {
             "type": "SvgFeatureRenderer",
-            "color1": "rgb(214, 59, 59)"
+            "color1": "rgb(214, 59, 59)",
+            "labels": {
+              "name": "jexl:get(feature,'sgrna_number')"
+            }
           }
         },
         {
@@ -397,7 +406,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
       }
     },
     {
@@ -567,7 +576,10 @@
           "mouseover": "jexl:sgrnatarget(get(feature,'target_gene_name'))",
           "renderer": {
             "type": "SvgFeatureRenderer",
-            "color1": "rgb(214, 59, 59)"
+            "color1": "rgb(214, 59, 59)",
+            "labels": {
+              "name": "jexl:get(feature,'sgrna_number')"
+            }
           }
         },
         {
@@ -576,7 +588,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
       }
     },
     {
@@ -628,12 +640,12 @@
           "type": "LinearBasicDisplay",
           "displayId": "RdKW20_sorted.gff-LinearBasicDisplay",
           "height": 200,
-          "mouseover": "jexl:italics(get(feature,'name')) || get(feature,'locus_tag')",
+          "mouseover": "jexl:italics(get(feature,'name')) || get(feature,'rdkw20_locus_tag') || get(feature,'locus_tag')",
           "renderer": {
             "type": "SvgFeatureRenderer",
             "color1": "jexl:get(feature,'type')=='tRNA'?'rgb(45, 41, 138)': get(feature,'type')=='tmRNA'?'rgb(45, 41, 138)': get(feature,'type')=='rRNA'?'rgb(136, 184, 77)' : get(feature,'type')=='mRNA_region'?'grey':'rgb(215, 163, 32)'",
             "labels": {
-              "name": "jexl:get(feature,'name') || get(feature,'locus_tag')"
+              "name": "jexl:get(feature,'name') || get(feature,'rdkw20_locus_tag') || get(feature,'locus_tag')"
             }
           }
         },
@@ -643,7 +655,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{name:italics(feature.name),type:capital(replaceuc(feature.type)), Source:capital(replaceuc(feature.source)), source:undefined, phase:undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, RdKW20_locus_tag:feature.rdkw20_locus_tag, rdkw20_locus_tag:undefined, Locus_tag_prokka:feature.locus_tag, locus_tag:undefined, UniProt:feature.uniprot != null ? '<a href=https://www.uniprot.org/uniprotkb/'+feature.uniprot+'>'+feature.uniprot+'</a>' : null, uniprot:undefined, AlphaFold: feature.uniprot != null ? '<a href=https://alphafold.ebi.ac.uk/entry/'+feature.uniprot+'>'+'AlphaFold'+'</a>' : null, Foldseek: feature.uniprot != null ? '<a href=https://search.foldseek.com/search?accession='+feature.uniprot+'&source=AlphaFoldDB>'+'FoldSeek'+'</a>' : null,EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, }",
+        "feature": "jexl:{name:italics(feature.name),type:capital(replaceuc(feature.type)), Source:capital(replaceuc(feature.source)), source:undefined, phase:undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, RdKW20_locus_tag:feature.rdkw20_locus_tag, rdkw20_locus_tag:undefined, Locus_tag_prokka:feature.locus_tag, locus_tag:undefined, UniProt:feature.uniprot != null ? '<a href=https://www.uniprot.org/uniprotkb/'+feature.uniprot+'>'+feature.uniprot+'</a>' : null, uniprot:undefined, AlphaFold: feature.uniprot != null ? '<a href=https://alphafold.ebi.ac.uk/entry/'+feature.uniprot+'>'+'AlphaFold'+'</a>' : null, Foldseek: feature.uniprot != null ? '<a href=https://search.foldseek.com/search?accession='+feature.uniprot+'&source=AlphaFoldDB>'+'FoldSeek'+'</a>' : null,EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, Essentiality: feature.essentiality != null ? jsonparse(feature.essentiality): null, essentiality:undefined}",
         "subfeatures": "jexl:{accession:undefined, name:italics(feature.name), type:capital(feature.type), Source:replaceuc(feature.source), source:undefined, phase:undefined, id:undefined, parent:undefined, COG_number: feature.db_xref != null ? '<a href=https://www.ncbi.nlm.nih.gov/research/cog/cog/'+removecog(feature.db_xref)+'>'+removecog(feature.db_xref)+'</a>' : null, db_xref:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, Gene:italics(feature.gene), gene:undefined, Inference:feature.inference != null ? capital(inference(feature.inference)) : null, inference:undefined, locus_tag:undefined, Product:capital(feature.product), product:undefined, protein_id:undefined, RFAM: feature.accession != null ? '<a href=https://rfam.org/family/'+feature.accession+'>'+feature.accession+'</a>' : null, note:undefined, Note: feature.note != null ? removequotes(feature.note): null}"
       }
     },
@@ -746,7 +758,10 @@
           "mouseover": "jexl:sgrnatarget(get(feature,'target_gene_name'))",
           "renderer": {
             "type": "SvgFeatureRenderer",
-            "color1": "rgb(214, 59, 59)"
+            "color1": "rgb(214, 59, 59)",
+            "labels": {
+              "name": "jexl:get(feature,'sgrna_number')"
+            }
           }
         },
         {
@@ -755,7 +770,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
       }
     },
     {
@@ -925,7 +940,10 @@
           "mouseover": "jexl:sgrnatarget(get(feature,'target_gene_name'))",
           "renderer": {
             "type": "SvgFeatureRenderer",
-            "color1": "rgb(214, 59, 59)"
+            "color1": "rgb(214, 59, 59)",
+            "labels": {
+              "name": "jexl:get(feature,'sgrna_number')"
+            }
           }
         },
         {
@@ -934,7 +952,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
       }
     }
   ],
@@ -1061,7 +1079,7 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v0.14)",
+    "name": "HaemoBrowse (v0.15)",
     "margin": 0,
     "views": [
       {
