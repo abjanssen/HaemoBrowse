@@ -1,12 +1,13 @@
 {
-  "dateCreated": "2024-07-12T17:28:29.407Z",
+  "dateCreated": "2024-07-13T19:00:54.559Z",
   "tracks": [
     {
       "trackId": "RdKW20_sorted.gff",
       "attributesIndexed": [
         "name",
         "gene",
-        "locus_tag"
+        "locus_tag",
+        "RdKW20_locus_tag"
       ],
       "excludedTypes": [
         "CDS",
