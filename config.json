@@ -655,7 +655,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{name:italics(feature.name),type:capital(replaceuc(feature.type)), Source:capital(replaceuc(feature.source)), source:undefined, phase:undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, RdKW20_locus_tag:feature.rdkw20_locus_tag, rdkw20_locus_tag:undefined, Prokka_locus_tag:feature.locus_tag, locus_tag:undefined, UniProt:feature.uniprot != null ? '<a href=https://www.uniprot.org/uniprotkb/'+feature.uniprot+'>'+feature.uniprot+'</a>' : null, uniprot:undefined, AlphaFold: feature.uniprot != null ? '<a href=https://alphafold.ebi.ac.uk/entry/'+feature.uniprot+'>'+'AlphaFold'+'</a>' : null, Foldseek: feature.uniprot != null ? '<a href=https://search.foldseek.com/search?accession='+feature.uniprot+'&source=AlphaFoldDB>'+'FoldSeek'+'</a>' : null,EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, Essentiality: feature.essentiality != null ? jsonparse(feature.essentiality): null, essentiality:undefined}",
+        "feature": "jexl:{name:italics(feature.name),type:capital(replaceuc(feature.type)), Source:capital(replaceuc(feature.source)), source:undefined, phase:undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, RdKW20_locus_tag:feature.rdkw20_locus_tag, rdkw20_locus_tag:undefined, Prokka_locus_tag:feature.locus_tag, locus_tag:undefined, UniProt:feature.uniprot != null ? '<a href=https://www.uniprot.org/uniprotkb/'+feature.uniprot+'>'+feature.uniprot+'</a>' : null, uniprot:undefined, AlphaFold: feature.uniprot != null ? '<a href=https://alphafold.ebi.ac.uk/entry/'+feature.uniprot+'>'+'AlphaFold'+'</a>' : null, Foldseek: feature.uniprot != null ? '<a href=https://search.foldseek.com/search?accession='+feature.uniprot+'&source=AlphaFoldDB>'+'FoldSeek'+'</a>' : null,EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , STRING: feature.rdkw20_locus_tag != null ? '<a href=https://string-db.org/cgi/network?identifiers=71421.'+feature.rdkw20_locus_tag+'>'+'STRING'+'</a>' : null, ec_number:undefined, Essentiality: feature.essentiality != null ? jsonparse(feature.essentiality): null, essentiality:undefined}",
         "subfeatures": "jexl:{accession:undefined, name:italics(feature.name), type:capital(feature.type), Source:replaceuc(feature.source), source:undefined, phase:undefined, id:undefined, parent:undefined, COG_number: feature.db_xref != null ? '<a href=https://www.ncbi.nlm.nih.gov/research/cog/cog/'+removecog(feature.db_xref)+'>'+removecog(feature.db_xref)+'</a>' : null, db_xref:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, Gene:italics(feature.gene), gene:undefined, Inference:feature.inference != null ? capital(inference(feature.inference)) : null, inference:undefined, locus_tag:undefined, Product:capital(feature.product), product:undefined, protein_id:undefined, RFAM: feature.accession != null ? '<a href=https://rfam.org/family/'+feature.accession+'>'+feature.accession+'</a>' : null, note:undefined, Note: feature.note != null ? removequotes(feature.note): null}"
       }
     },
@@ -1079,7 +1079,7 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v0.22)",
+    "name": "HaemoBrowse (v0.23)",
     "margin": 0,
     "views": [
       {
