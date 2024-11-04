@@ -954,6 +954,572 @@
       "formatDetails": {
         "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
       }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "Synteny_all_v_all",
+      "name": "Alignment with all genomes",
+      "assemblyNames": [
+        "86028NP",
+        "RdKW20",
+        "R2866",
+        "Hi375"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "86028NP",
+          "RdKW20",
+          "R2866",
+          "Hi375"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/General/General_all_v_all_alignments.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "Synteny_all_v_all-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "Synteny_all_v_all-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "Synteny_all_v_all-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "Synteny_all_v_all-LGVSyntenyDisplay",
+          "height": 500
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "86028NP_Hi375_alignment",
+      "name": "Alignment with Hi375",
+      "assemblyNames": [
+        "86028NP"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "86028NP"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/86028NP/86028NP_Hi375_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "86028NP_Hi375_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "86028NP_Hi375_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "86028NP_Hi375_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "86028NP_Hi375_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "86028NP_RdKW20_alignment",
+      "name": "Alignment with Rd KW20",
+      "assemblyNames": [
+        "86028NP"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "86028NP"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/86028NP/86028NP_RdKW20_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "86028NP_RdKW20_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "86028NP_RdKW20_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "86028NP_RdKW20_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "86028NP_RdKW20_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "86028NP_R2866_alignment",
+      "name": "Alignment with NCTC8325-4",
+      "assemblyNames": [
+        "86028NP"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "86028NP"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/86028NP/86028NP_R2866_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "86028NP_R2866_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "86028NP_R2866_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "86028NP_R2866_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "86028NP_R2866_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "RdKW20_Hi375_alignment",
+      "name": "Alignment with Hi375",
+      "assemblyNames": [
+        "RdKW20"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "RdKW20"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/RdKW20/RdKW20_Hi375_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "RdKW20_Hi375_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "RdKW20_Hi375_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "RdKW20_Hi375_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "RdKW20_Hi375_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "RdKW20_86028NP_alignment",
+      "name": "Alignment with 86028NP",
+      "assemblyNames": [
+        "RdKW20"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "RdKW20"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/RdKW20/RdKW20_86028NP_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "RdKW20_86028NP_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "RdKW20_86028NP_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "RdKW20_86028NP_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "RdKW20_86028NP_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "RdKW20_R2866_alignment",
+      "name": "Alignment with NCTC8325-4",
+      "assemblyNames": [
+        "RdKW20"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "RdKW20"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/RdKW20/RdKW20_R2866_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "RdKW20_R2866_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "RdKW20_R2866_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "RdKW20_R2866_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "RdKW20_R2866_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "R2866_Hi375_alignment",
+      "name": "Alignment with Hi375",
+      "assemblyNames": [
+        "R2866"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "R2866"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/R2866/R2866_Hi375_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "R2866_Hi375_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "R2866_Hi375_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "R2866_Hi375_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "R2866_Hi375_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "R2866_86028NP_alignment",
+      "name": "Alignment with 86028NP",
+      "assemblyNames": [
+        "R2866"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "R2866"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/R2866/R2866_86028NP_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "R2866_86028NP_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "R2866_86028NP_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "R2866_86028NP_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "R2866_86028NP_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "R2866_RdKW20_alignment",
+      "name": "Alignment with Rd KW20",
+      "assemblyNames": [
+        "R2866"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "R2866"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/R2866/R2866_RdKW20_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "R2866_RdKW20_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "R2866_RdKW20_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "R2866_RdKW20_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "R2866_RdKW20_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "Hi375_R2866_alignment",
+      "name": "Alignment with R2866",
+      "assemblyNames": [
+        "Hi375"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "Hi375"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/Hi375/Hi375_R2866_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "Hi375_R2866_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "Hi375_R2866_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "Hi375_R2866_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "Hi375_R2866_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "Hi375_86028NP_alignment",
+      "name": "Alignment with 86028NP",
+      "assemblyNames": [
+        "Hi375"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "Hi375"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/Hi375/Hi375_86028NP_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "Hi375_86028NP_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "Hi375_86028NP_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "Hi375_86028NP_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "Hi375_86028NP_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "Hi375_RdKW20_alignment",
+      "name": "Alignment with Rd KW20",
+      "assemblyNames": [
+        "Hi375"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Alignment with HaemoBrowse genomes"
+      ],
+      "adapter": {
+        "type": "PAFAdapter",
+        "assemblyNames": [
+          "Hi375"
+        ],
+        "pafLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/Hi375/Hi375_RdKW20_alignment.paf"
+        }
+      },
+      "displays": [
+        {
+          "type": "DotplotDisplay",
+          "displayId": "Hi375_RdKW20_alignment-DotplotDisplay"
+        },
+        {
+          "type": "LinearComparativeDisplay",
+          "displayId": "Hi375_RdKW20_alignment-LinearComparativeDisplay"
+        },
+        {
+          "type": "LinearSyntenyDisplay",
+          "displayId": "Hi375_RdKW20_alignment-LinearSyntenyDisplay"
+        },
+        {
+          "type": "LGVSyntenyDisplay",
+          "displayId": "Hi375_RdKW20_alignment-LGVSyntenyDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{assemblyName: undefined, MashMap_mapping_quality:feature.mappingQual, Kmer_complexity_score:feature.kc, mappingQual:undefined, Identity:feature.id, id:undefined,  kc:undefined, syntenyId:undefined, identity:undefined, numMatches:undefined, blockLen:undefined, mate:{refName:mate.start}}"
+      }
     }
   ],
   "internetAccounts": [],
@@ -1079,7 +1645,7 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v0.26)",
+    "name": "HaemoBrowse (v0.27)",
     "margin": 0,
     "views": [
       {
@@ -1139,6 +1705,7 @@
         "showGridlines": true,
         "highlight": [],
         "colorByCDS": false,
+        "showTrackOutlines": true,
         "showBookmarkHighlights": true,
         "showBookmarkLabels": true
       },
@@ -1199,6 +1766,7 @@
         "showGridlines": true,
         "highlight": [],
         "colorByCDS": false,
+        "showTrackOutlines": true,
         "showBookmarkHighlights": true,
         "showBookmarkLabels": true
       },
@@ -1260,6 +1828,7 @@
         "showGridlines": true,
         "highlight": [],
         "colorByCDS": false,
+        "showTrackOutlines": true,
         "showBookmarkHighlights": true,
         "showBookmarkLabels": true
       },
@@ -1321,8 +1890,64 @@
         "showGridlines": true,
         "highlight": [],
         "colorByCDS": false,
+        "showTrackOutlines": true,
         "showBookmarkHighlights": true,
         "showBookmarkLabels": true
+      },
+      {
+        "id": "ojCDEC4wRlHsVualLuHvV",
+        "displayName": "Linear synteny alignment view",
+        "minimized": true,
+        "type": "LinearSyntenyView",
+        "trackSelectorType": "hierarchical",
+        "showIntraviewLinks": true,
+        "interactToggled": false,
+        "levels": [
+          {
+            "id": "i4HbpW9R4bbVpNsA6fvva",
+            "type": "LinearSyntenyViewHelper",
+            "tracks": [],
+            "height": 100,
+            "level": 0
+          }
+        ],
+        "views": [],
+        "viewTrackConfigs": [],
+        "drawCIGAR": true,
+        "drawCurves": false
+      },
+      {
+        "id": "avY7BRKwI1CCWoEC3Nloh",
+        "displayName": "Dotplot alignment view",
+        "minimized": true,
+        "type": "DotplotView",
+        "height": 600,
+        "borderSize": 20,
+        "tickSize": 5,
+        "vtextRotation": 0,
+        "htextRotation": -90,
+        "fontSize": 15,
+        "trackSelectorType": "hierarchical",
+        "assemblyNames": [],
+        "drawCigar": true,
+        "hview": {
+          "id": "Ixv2Q5D_SOvdUybjTDqAK",
+          "displayedRegions": [],
+          "bpPerPx": 0.02,
+          "offsetPx": -1053,
+          "interRegionPaddingWidth": 0,
+          "minimumBlockWidth": 0
+        },
+        "vview": {
+          "id": "CLAXFjjjThWhtiku0_TEr",
+          "displayedRegions": [],
+          "bpPerPx": 0.02,
+          "offsetPx": -275,
+          "interRegionPaddingWidth": 0,
+          "minimumBlockWidth": 0
+        },
+        "tracks": [],
+        "viewTrackConfigs": []
       }
     ],
     "sessionTracks": [],
@@ -1330,7 +1955,7 @@
     "temporaryAssemblies": [],
     "connectionInstances": [],
     "sessionConnections": [],
-    "focusedViewId": "L95ZzLLpZczZSHjhWF4Ls",
+    "focusedViewId": "avY7BRKwI1CCWoEC3Nloh",
     "sessionPlugins": []
   }
 }
