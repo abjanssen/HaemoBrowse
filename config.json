@@ -406,7 +406,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', score:undefined, source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
       }
     },
     {
@@ -588,7 +588,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', score:undefined, source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
       }
     },
     {
@@ -770,7 +770,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', score:undefined, source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
       }
     },
     {
@@ -952,7 +952,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
+        "feature": "jexl:{sgRNA_number:feature.sgrna_number, sgrna_number:undefined, Source:'V. de Bakker', score:undefined, source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name: feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, target_gene_name:undefined}"
       }
     },
     {
@@ -1645,7 +1645,7 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v0.27)",
+    "name": "HaemoBrowse (v0.28)",
     "margin": 0,
     "views": [
       {
