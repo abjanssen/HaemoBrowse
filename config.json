@@ -30,6 +30,12 @@
   },
   "plugins": [
     {
+      "name": "ReferenceContactsWidget",
+      "esmLoc": {
+        "uri": "plugins/ReferenceContactsWidget.js"
+      }
+    },    
+    {
       "name": "NucContent",
       "umdLoc": {
         "uri": "plugins/jbrowsepluginnuccontent.umd.production.min.js"
@@ -1639,7 +1645,7 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v0.36)",
+    "name": "HaemoBrowse (v0.37)",
     "margin": 0,
     "views": [
       {
