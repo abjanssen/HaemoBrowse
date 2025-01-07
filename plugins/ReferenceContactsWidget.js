@@ -41,8 +41,8 @@ export default class MyPlugin {
       null, 
       React.createElement('h1', null, 'Contact and feedback'),
       React.createElement('p', null, 'Thank you for visiting! This genome browser was developed by the Veening lab at the University of Lausanne, Switzerland. If you have any questions or feedback, please contact us via email.'),
-      React.createElement('p', null, 'Email: ', React.createElement("a", {href: "mailto:Veening.lab@gmail.com"}, "Veening.lab@gmail.com" )),
-      React.createElement('p', null, 'For more genome browsers developed by the Veening lab, please visit: ', React.createElement("a", {href: "https://www.veeninglab.com/resources"}, "https://www.veeninglab.com/resources" ), "."))
+      React.createElement('p', null, 'Email: ', React.createElement("a", {href: "mailto:Veening.lab@gmail.com?subject=HaemoBrowse"}, "Veening.lab@gmail.com" )),
+      React.createElement('p', null, 'For more genome browsers developed by the Veening lab, please visit: ', React.createElement("a", {href: "https://www.veeninglab.com/resources", target: "_blank", rel: "noopener noreferrer"}, "https://www.veeninglab.com/resources" ), "."))
       return React.createElement('div', null, [contactcontent])
     }
     const DataaAvailabilityWidget = props => {
@@ -53,7 +53,7 @@ export default class MyPlugin {
       'div', 
       null, 
       React.createElement('h1', null, 'Data Availability'),
-      React.createElement('p', null, 'Genomes displayed within HaemoBrowse are available from NCBI under accession numbers ', React.createElement("a", {href: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000012185.1/"}, "GCF_000012185.1"),' (86-028NP), ', React.createElement("a", {href: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000767075.1/"}, "GCF_000767075.1"), ' (NTHi375), ', React.createElement("a", {href: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000165525.1/"}, "GCF_000165525.1"), ' (R2866), and ', React.createElement("a", {href: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000027305.1/"}, "GCF_000165525.1"), ' (RdKW20).'),
+      React.createElement('p', null, 'Genomes displayed within HaemoBrowse are available from NCBI under accession numbers ', React.createElement("a", {href: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000012185.1/", target: "_blank", rel: "noopener noreferrer"}, "GCF_000012185.1"),' (86-028NP), ', React.createElement("a", {href: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000767075.1/", target: "_blank", rel: "noopener noreferrer"}, "GCF_000767075.1"), ' (NTHi375), ', React.createElement("a", {href: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000165525.1/", target: "_blank", rel: "noopener noreferrer"}, "GCF_000165525.1"), ' (R2866), and ', React.createElement("a", {href: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000027305.1/", target: "_blank", rel: "noopener noreferrer"}, "GCF_000165525.1"), ' (RdKW20).'),
       React.createElement('p', null, ''))
       return React.createElement('div', null, [availabilitycontent])
     }
