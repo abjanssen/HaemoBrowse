@@ -34,7 +34,7 @@
       "esmLoc": {
         "uri": "plugins/ReferenceContactsWidget.js"
       }
-    },    
+    },
     {
       "name": "NucContent",
       "umdLoc": {
@@ -1536,7 +1536,7 @@
       "hierarchicalTrackSelector": {
         "id": "hierarchicalTrackSelector",
         "type": "HierarchicalTrackSelectorWidget",
-        "view": "L95ZzLLpZczZSHjhWF4Ls",
+        "view": "1jsQQ0IgyZkK9hfZvZVuQ",
         "faceted": {
           "filterText": "",
           "showSparse": false,
@@ -1645,7 +1645,7 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v1.0.0)",
+    "name": "HaemoBrowse (v1.0.1) ",
     "margin": 0,
     "views": [
       {
@@ -1706,8 +1706,8 @@
         "highlight": [],
         "colorByCDS": false,
         "showTrackOutlines": true,
-        "showBookmarkHighlights": true,
-        "showBookmarkLabels": true
+        "bookmarkHighlightsVisible": true,
+        "bookmarkLabelsVisible": true
       },
       {
         "id": "HqsUJzoM5lv28ijzmdLh3",
@@ -1767,8 +1767,8 @@
         "highlight": [],
         "colorByCDS": false,
         "showTrackOutlines": true,
-        "showBookmarkHighlights": true,
-        "showBookmarkLabels": true
+        "bookmarkHighlightsVisible": true,
+        "bookmarkLabelsVisible": true
       },
       {
         "id": "1jsQQ0IgyZkK9hfZvZVuQ",
@@ -1813,7 +1813,26 @@
               {
                 "id": "2aVUO00cZCldDwlBLv8hR",
                 "type": "LinearBasicDisplay",
+                "heightPreConfig": 45,
                 "configuration": "RdKW20_sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "DJsp0WflhATGkg53QrfKi",
+            "type": "NucContentTrack",
+            "configuration": "gc_content_RdKW20",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "-SG47WlDJNxlkWbPqNyRI",
+                "type": "NucContentDisplay",
+                "heightPreConfig": 94,
+                "configuration": "gc_content_dynamic_RdKW20-NucContentDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "posColor": "rgb(255, 127, 0)",
+                "constraints": {}
               }
             ]
           }
@@ -1829,8 +1848,8 @@
         "highlight": [],
         "colorByCDS": false,
         "showTrackOutlines": true,
-        "showBookmarkHighlights": true,
-        "showBookmarkLabels": true
+        "bookmarkHighlightsVisible": true,
+        "bookmarkLabelsVisible": true
       },
       {
         "id": "L95ZzLLpZczZSHjhWF4Ls",
@@ -1891,8 +1910,8 @@
         "highlight": [],
         "colorByCDS": false,
         "showTrackOutlines": true,
-        "showBookmarkHighlights": true,
-        "showBookmarkLabels": true
+        "bookmarkHighlightsVisible": true,
+        "bookmarkLabelsVisible": true
       },
       {
         "id": "ojCDEC4wRlHsVualLuHvV",
@@ -1901,7 +1920,8 @@
         "type": "LinearSyntenyView",
         "trackSelectorType": "hierarchical",
         "showIntraviewLinks": true,
-        "interactToggled": false,
+        "linkViews": false,
+        "interactiveOverlay": false,
         "levels": [
           {
             "id": "i4HbpW9R4bbVpNsA6fvva",
@@ -1934,7 +1954,7 @@
           "id": "Ixv2Q5D_SOvdUybjTDqAK",
           "displayedRegions": [],
           "bpPerPx": 0.02,
-          "offsetPx": -1053,
+          "offsetPx": -797,
           "interRegionPaddingWidth": 0,
           "minimumBlockWidth": 0
         },
@@ -1955,7 +1975,8 @@
     "temporaryAssemblies": [],
     "connectionInstances": [],
     "sessionConnections": [],
-    "focusedViewId": "avY7BRKwI1CCWoEC3Nloh",
+    "focusedViewId": "1jsQQ0IgyZkK9hfZvZVuQ",
     "sessionPlugins": []
-  }
+  },
+  "preConfiguredSessions": []
 }
