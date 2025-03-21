@@ -365,7 +365,8 @@
         "indexingAttributes": [
           "Name",
           "ID",
-          "name"
+          "name",
+          "sgRNA_number"
         ],
         "textSearchAdapter": {
           "type": "TrixTextSearchAdapter",
@@ -547,7 +548,8 @@
         "indexingAttributes": [
           "Name",
           "ID",
-          "name"
+          "name",
+          "sgRNA_number"
         ],
         "textSearchAdapter": {
           "type": "TrixTextSearchAdapter",
@@ -729,7 +731,8 @@
         "indexingAttributes": [
           "Name",
           "ID",
-          "name"
+          "name",
+          "sgRNA_number"
         ],
         "textSearchAdapter": {
           "type": "TrixTextSearchAdapter",
@@ -911,7 +914,8 @@
         "indexingAttributes": [
           "Name",
           "ID",
-          "name"
+          "name",
+          "sgRNA_number"
         ],
         "textSearchAdapter": {
           "type": "TrixTextSearchAdapter",
@@ -1645,7 +1649,7 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v1.0.3) ",
+    "name": "HaemoBrowse (v1.0.4) ",
     "margin": 0,
     "views": [
       {

@@ -1,17 +1,18 @@
 {
-  "dateCreated": "2024-07-13T19:00:57.031Z",
+  "dateCreated": "2025-03-18T10:33:14.423Z",
   "tracks": [
     {
       "trackId": "86028NP_sgRNA_sorted.gff",
       "attributesIndexed": [
         "Name",
         "ID",
-        "name"
+        "name",
+        "sgRNA_number"
       ],
       "excludedTypes": [
         "CDS",
         "exon",
-        "id"
+        "ID"
       ],
       "adapterConf": {
         "type": "Gff3TabixAdapter",
