@@ -9,5 +9,8 @@ We will come back to you as soon as possible.
 
 Have you been using our genome browser, please cite us in your work, it would help us:
 ```
-Available soon!
+CRISPRi-seq in Haemophilus influenzae reveals genome-wide and medium-specific growth determinants.
+Celia Gil-Campillo, Johann Mignolet, Asier Domínguez-San Pedro, Beatriz Rapún-Araiz, Axel B. Janssen, Vincent de Bakker, Jan-Willem Veening, Junkal Garmendia
+bioRxiv, 2025, 2025.08.05.668841
+https://doi.org/10.1101/2025.08.05.668841
 ```
