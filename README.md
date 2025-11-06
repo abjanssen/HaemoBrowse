@@ -11,6 +11,6 @@ Have you been using our genome browser, please cite us in your work, it would he
 ```
 CRISPRi-seq in Haemophilus influenzae reveals genome-wide and medium-specific growth determinants.
 Celia Gil-Campillo, Johann Mignolet, Asier Domínguez-San Pedro, Beatriz Rapún-Araiz, Axel B. Janssen, Vincent de Bakker, Jan-Willem Veening, Junkal Garmendia
-bioRxiv, 2025, 2025.08.05.668841
-https://doi.org/10.1101/2025.08.05.668841
+PLoS Pathogens, 2025, e1013650
+https://doi.org/10.1371/journal.ppat.1013650
 ```
