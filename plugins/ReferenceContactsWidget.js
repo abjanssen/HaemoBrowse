@@ -28,8 +28,8 @@ export default class MyPlugin {
       React.createElement('h1', null, 'Citing HaemoBrowse'),
       React.createElement('p', null, 'CRISPRi-seq in ', React.createElement('i', null, 'Haemophilus influenzae'), ' reveals genome-wide and medium-specific growth determinants.'),
       React.createElement('p', null, 'Celia Gil-Campillo, Johann Mignolet, Asier Domínguez-San Pedro, Beatriz Rapún-Araiz, Axel B. Janssen, Vincent de Bakker, Jan-Willem Veening, Junkal Garmendia'),
-      React.createElement('p', null, 'bioRxiv, 2025, 2025.08.05.668841'),
-      React.createElement("span", null, React.createElement("a", {href: "https://doi.org/10.1101/2025.08.05.668841", target: "_blank", rel: "noopener noreferrer"}, "https://doi.org/10.1101/2025.08.05.668841" )))
+      React.createElement('p', null, 'PLoS Pathogens, 2025, e1013650'),
+      React.createElement("span", null, React.createElement("a", {href: "https://doi.org/10.1371/journal.ppat.1013650", target: "_blank", rel: "noopener noreferrer"}, "https://doi.org/10.1371/journal.ppat.1013650" )))
       return React.createElement('div', null, [citecontent])
     }
     const ContactWidget = props => {
