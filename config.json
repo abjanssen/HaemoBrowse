@@ -41,6 +41,12 @@
         "uri": "plugins/jbrowsepluginnuccontent.umd.production.min.js"
       }
     },
+            {
+              "name": "MsaView",
+              "umdLoc": {
+                "uri": "plugins/jbrowse-plugin-msaview.umd.production.min.js"
+              }
+            },
     {
       "name": "RemoveCOG",
       "umdLoc": {
@@ -1637,7 +1643,7 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v1.0.20) ",
+    "name": "HaemoBrowse (v1.0.21) ",
     "margin": 0,
     "views": [
       {
