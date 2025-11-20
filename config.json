@@ -48,6 +48,12 @@
               }
             },
     {
+      "name": "Protein3d",
+      "umdLoc": {
+        "uri": "plugins/jbrowse-plugin-protein3d.umd.production.min.js"
+      }
+    },
+    {
       "name": "RemoveCOG",
       "umdLoc": {
         "uri": "plugins/RemoveCOG.js"
@@ -1643,7 +1649,7 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v1.0.21) ",
+    "name": "HaemoBrowse (v1.0.22) ",
     "margin": 0,
     "views": [
       {
