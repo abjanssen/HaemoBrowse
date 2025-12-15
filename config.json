@@ -29,85 +29,21 @@
     }
   },
   "plugins": [
-    {
-      "name": "ReferenceContactsWidget",
-      "esmLoc": {
-        "uri": "plugins/ReferenceContactsWidget.js"
-      }
-    },
-    {
-      "name": "NucContent",
-      "umdLoc": {
-        "uri": "plugins/jbrowsepluginnuccontent.umd.production.min.js"
-      }
-    },
-            {
-              "name": "MsaView",
-              "umdLoc": {
-                "uri": "plugins/jbrowse-plugin-msaview.umd.production.min.js"
-              }
-            },
-    {
-      "name": "Protein3d",
-      "umdLoc": {
-        "uri": "plugins/jbrowse-plugin-protein3d.umd.production.min.js"
-      }
-    },
-    {
-      "name": "RemoveCOG",
-      "umdLoc": {
-        "uri": "plugins/RemoveCOG.js"
-      }
-    },
-    {
-      "name": "JSONParse",
-      "umdLoc": {
-        "uri": "plugins/JSONParse.js"
-      }
-    },
-    {
-      "name": "ReplaceSpaces",
-      "umdLoc": {
-        "uri": "plugins/ReplaceSpaces.js"
-      }
-    },
-    {
-      "name": "ReplaceUnderslashCapitalize",
-      "umdLoc": {
-        "uri": "plugins/ReplaceUnderslashCapitalize.js"
-      }
-    },
-    {
-      "name": "Italicize",
-      "umdLoc": {
-        "uri": "plugins/Italicize.js"
-      }
-    },
-    {
-      "name": "RemoveQuotes",
-      "umdLoc": {
-        "uri": "plugins/RemoveQuotes.js"
-      }
-    },
-    {
-      "name": "sgRNATarget",
-      "umdLoc": {
-        "uri": "plugins/sgRNATarget.js"
-      }
-    },
-    {
-      "name": "Capital",
-      "umdLoc": {
-        "uri": "plugins/Capital.js"
-      }
-    },
-    {
-      "name": "Inference",
-      "umdLoc": {
-        "uri": "plugins/Inference.js"
-      }
-    }
-  ],
+  { "name": "MsaView", "umdLoc": { "uri": "plugins/jbrowse-plugin-msaview.umd.production.min.js" } },
+  { "name": "NucContent", "umdLoc": { "uri": "plugins/jbrowsepluginnuccontent.umd.production.min.js" } },
+  { "name": "Protein3d", "umdLoc": { "uri": "plugins/jbrowse-plugin-protein3d.umd.production.min.js" } },
+  { "name": "ReferenceContactsWidget", "esmLoc": { "uri": "plugins/ReferenceContactsWidget.js" } },
+  { "name": "Inference", "umdLoc": { "uri": "plugins/Inference.js" } },
+  { "name": "JSONParse", "umdLoc": { "uri": "plugins/JSONParse.js" } },
+  { "name": "sgRNATarget", "umdLoc": { "uri": "plugins/sgRNATarget.js" } },
+  { "name": "Capital", "umdLoc": { "uri": "plugins/Capital.js" } },
+  { "name": "Italicize", "umdLoc": { "uri": "plugins/Italicize.js" } },
+  { "name": "RemoveCOG", "umdLoc": { "uri": "plugins/RemoveCOG.js" } },
+  { "name": "RemoveQuotes", "umdLoc": { "uri": "plugins/RemoveQuotes.js" } },
+  { "name": "ReplaceSpaces", "umdLoc": { "uri": "plugins/ReplaceSpaces.js" } },
+  { "name": "ReplaceUnderslashCapitalize", "umdLoc": { "uri": "plugins/ReplaceUnderslashCapitalize.js" } }
+    ]
+    ,
   "assemblies": [
     {
       "name": "Hi375",
@@ -1649,7 +1585,7 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v1.0.22) ",
+    "name": "HaemoBrowse (v1.0.23) ",
     "margin": 0,
     "views": [
       {
