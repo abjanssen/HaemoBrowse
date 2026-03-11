@@ -19,7 +19,7 @@
           "main": "#FF6969"
         },
         "quaternary": {
-          "main": "#FFF5E0"
+          "main": "#141E46"
         }
       }
     },
@@ -58,10 +58,6 @@
           "faiLocation": {
             "locationType": "UriLocation",
             "uri": "./data/Hi375/Hi375.fna.fai"
-          },
-          "metadataLocation": {
-            "locationType": "UriLocation",
-            "uri": "/path/to/fa.metadata.yaml"
           }
         },
         "displays": [
@@ -90,10 +86,6 @@
           "faiLocation": {
             "locationType": "UriLocation",
             "uri": "./data/86028NP/86028NP.fna.fai"
-          },
-          "metadataLocation": {
-            "locationType": "UriLocation",
-            "uri": "/path/to/fa.metadata.yaml"
           }
         },
         "displays": [
@@ -122,10 +114,6 @@
           "faiLocation": {
             "locationType": "UriLocation",
             "uri": "./data/R2866/R2866.fna.fai"
-          },
-          "metadataLocation": {
-            "locationType": "UriLocation",
-            "uri": "/path/to/fa.metadata.yaml"
           }
         },
         "displays": [
@@ -154,10 +142,6 @@
           "faiLocation": {
             "locationType": "UriLocation",
             "uri": "./data/RdKW20/RdKW20.fna.fai"
-          },
-          "metadataLocation": {
-            "locationType": "UriLocation",
-            "uri": "/path/to/fa.metadata.yaml"
           }
         },
         "displays": [
@@ -262,10 +246,6 @@
         "faiLocation": {
           "locationType": "UriLocation",
           "uri": "./data/Hi375/Hi375.fna.fai"
-        },
-        "metadataLocation": {
-          "locationType": "UriLocation",
-          "uri": "/path/to/fa.metadata.yaml"
         }
       },
       "displays": [
@@ -437,10 +417,6 @@
         "faiLocation": {
           "locationType": "UriLocation",
           "uri": "./data/R2866/R2866.fna.fai"
-        },
-        "metadataLocation": {
-          "locationType": "UriLocation",
-          "uri": "/path/to/fa.metadata.yaml"
         }
       },
       "displays": [
@@ -612,10 +588,6 @@
         "faiLocation": {
           "locationType": "UriLocation",
           "uri": "./data/RdKW20/RdKW20.fna.fai"
-        },
-        "metadataLocation": {
-          "locationType": "UriLocation",
-          "uri": "/path/to/fa.metadata.yaml"
         }
       },
       "displays": [
@@ -787,10 +759,6 @@
         "faiLocation": {
           "locationType": "UriLocation",
           "uri": "./data/86028NP/86028NP.fna.fai"
-        },
-        "metadataLocation": {
-          "locationType": "UriLocation",
-          "uri": "/path/to/fa.metadata.yaml"
         }
       },
       "displays": [
@@ -1564,15 +1532,16 @@
     },
     "minimized": false,
     "id": "Zu30t9ukCILu-hbkldG-3",
-    "name": "HaemoBrowse (v1.0.27) ",
+    "name": "HaemoBrowse (v1.0.28) ",
     "margin": 0,
     "views": [
       {
         "id": "raZrN1AK9eGFmxWHs5glK",
+        "displayName": "Hi375",
         "minimized": true,
         "type": "LinearGenomeView",
         "offsetPx": 0,
-        "bpPerPx": 3.0413625304136254,
+        "bpPerPx": 2.31033020718,
         "displayedRegions": [
           {
             "reversed": false,
@@ -1592,7 +1561,7 @@
               {
                 "id": "r-Ql07Kj3_ySUlp76xsKh",
                 "type": "LinearReferenceSequenceDisplay",
-                "heightPreConfig": 50,
+                "heightPreConfig": 100,
                 "configuration": "Hi375-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
                 "showForward": true,
                 "showReverse": true,
@@ -1609,6 +1578,7 @@
               {
                 "id": "Q459cj_OhK-OS0aKlw6Wl",
                 "type": "LinearBasicDisplay",
+                "heightPreConfig": 200,
                 "configuration": "Hi375_sorted.gff-LinearBasicDisplay"
               }
             ]
@@ -1623,6 +1593,7 @@
               {
                 "id": "j4N3EAiK2tC1KfjZwIiX-",
                 "type": "LinearGCContentTrackDisplay",
+                "heightPreConfig": 100,
                 "configuration": "gc_content_Hi375-LinearGCContentTrackDisplay",
                 "selectedRendering": "",
                 "resolution": 1,
@@ -1653,10 +1624,11 @@
       },
       {
         "id": "HqsUJzoM5lv28ijzmdLh3",
+        "displayName": "R2866",
         "minimized": true,
         "type": "LinearGenomeView",
         "offsetPx": 0,
-        "bpPerPx": 3.0413625304136254,
+        "bpPerPx": 2.31033020718,
         "displayedRegions": [
           {
             "reversed": false,
@@ -1676,7 +1648,7 @@
               {
                 "id": "_fTccrLEG-c194Z_lmzda",
                 "type": "LinearReferenceSequenceDisplay",
-                "heightPreConfig": 50,
+                "heightPreConfig": 100,
                 "configuration": "R2866-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
                 "showForward": true,
                 "showReverse": true,
@@ -1693,6 +1665,7 @@
               {
                 "id": "CjOyaAFg2MsvJorr0v9wp",
                 "type": "LinearBasicDisplay",
+                "heightPreConfig": 200,
                 "configuration": "R2866_sorted.gff-LinearBasicDisplay"
               }
             ]
@@ -1707,6 +1680,7 @@
               {
                 "id": "j4N3EAiK2tC1KfjZwIiX-",
                 "type": "LinearGCContentTrackDisplay",
+                "heightPreConfig": 100,
                 "configuration": "gc_content_R2866-LinearGCContentTrackDisplay",
                 "selectedRendering": "",
                 "resolution": 1,
@@ -1741,7 +1715,7 @@
         "minimized": false,
         "type": "LinearGenomeView",
         "offsetPx": 0,
-        "bpPerPx": 3.0413625304136254,
+        "bpPerPx": 2.31033020718,
         "displayedRegions": [
           {
             "reversed": false,
@@ -1761,7 +1735,7 @@
               {
                 "id": "b4gMWeOzn-k_SKOc5BT_C",
                 "type": "LinearReferenceSequenceDisplay",
-                "heightPreConfig": 50,
+                "heightPreConfig": 100,
                 "configuration": "RdKW20-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
                 "showForward": true,
                 "showReverse": true,
@@ -1778,7 +1752,7 @@
               {
                 "id": "2aVUO00cZCldDwlBLv8hR",
                 "type": "LinearBasicDisplay",
-                "heightPreConfig": 45,
+                "heightPreConfig": 200,
                 "configuration": "RdKW20_sorted.gff-LinearBasicDisplay"
               }
             ]
@@ -1793,6 +1767,7 @@
               {
                 "id": "j4N3EAiK2tC1KfjZwIiX-",
                 "type": "LinearGCContentTrackDisplay",
+                "heightPreConfig": 100,
                 "configuration": "gc_content_RdKW20-LinearGCContentTrackDisplay",
                 "selectedRendering": "",
                 "resolution": 1,
@@ -1827,7 +1802,7 @@
         "minimized": true,
         "type": "LinearGenomeView",
         "offsetPx": 0,
-        "bpPerPx": 3.0413625304136254,
+        "bpPerPx": 2.31033020718,
         "displayedRegions": [
           {
             "reversed": false,
@@ -1847,7 +1822,7 @@
               {
                 "id": "GHTLy8mIWG41Ps9ICTGiw",
                 "type": "LinearReferenceSequenceDisplay",
-                "heightPreConfig": 50,
+                "heightPreConfig": 100,
                 "configuration": "86028NP-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
                 "showForward": true,
                 "showReverse": true,
@@ -1864,6 +1839,7 @@
               {
                 "id": "JXnD8OAEA1PUXcy4C8r2R",
                 "type": "LinearBasicDisplay",
+                "heightPreConfig": 200,
                 "configuration": "86028NP_sorted.gff-LinearBasicDisplay"
               }
             ]
@@ -1878,6 +1854,7 @@
               {
                 "id": "j4N3EAiK2tC1KfjZwIiX-",
                 "type": "LinearGCContentTrackDisplay",
+                "heightPreConfig": 100,
                 "configuration": "gc_content_86028NP-LinearGCContentTrackDisplay",
                 "selectedRendering": "",
                 "resolution": 1,
